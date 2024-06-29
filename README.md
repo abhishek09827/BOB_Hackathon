@@ -1,57 +1,19 @@
-# AI RESEARCH Crew
+# FinVisor AI
 
-Welcome to the AI RESEARCH Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+## Problem Statement
 
-## Installation
+We decided to solve this problem because current financial advisories lack personalization and transparency, often providing generic recommendations that fail to meet individual needs. Users typically have no control over which parts of their data are used, and their specific considerations are often overlooked. This results in a significant trust deficit, as many feel that the advice is not well-curated or in their best interest. Addressing these issues is crucial to improving user satisfaction and confidence in financial services.
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [Poetry](https://python-poetry.org/) for dependency management and package handling, offering a seamless setup and execution experience.
+GenAI can deliver highly personalized and transparent financial advisories by analyzing vast amounts of data to tailor advice to each user's unique situation and preferences. Moreover, GenAI's ability to provide clear explanations for its recommendations fosters greater trust and confidence among users. The integration of explainability with GenAI is particularly exciting, as it ensures users understand how and why specific advice is given, further enhancing trust and engagement.
 
-First, if you haven't already, install Poetry:
+### Solution
+GenAI addresses these challenges by leveraging advanced data analytics to deliver highly personalized and transparent financial advisories. By analyzing vast amounts of data, GenAI tailors recommendations to each user's unique situation and preferences. Its integrated explainability feature ensures users understand the reasoning behind recommendations, enhancing trust and confidence in financial decision-making.
 
-```bash
-pip install poetry
-```
+### Features
+- Personalized Advice : Utilizes advanced AI to create financial plans specifically tailored to individual user goals and financial situations.
+- Provide Explainability : Provides well-organized financial plans with transparent explanations, making it easy for users to understand and follow the advice.
+- Well-Researched Advice : Delivers financial recommendations backed by thorough research and ensuring credibility and trustworthiness.
+- Dynamic Advisory Services : Offers real-time advisory services that continuously adapt to changing market conditions and evolving user goals, ensuring relevant and timely advice.
 
-Next, navigate to your project directory and install the dependencies:
 
-1. First lock the dependencies and then install them:
-```bash
-poetry lock
-```
-```bash
-poetry install
-```
-### Customizing
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/newsletter_gen/config/agents.yaml` to define your agents
-- Modify `src/newsletter_gen/config/tasks.yaml` to define your tasks
-- Modify `src/newsletter_gen/crew.py` to add your own logic, tools and specific args
-- Modify `src/newsletter_gen/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-poetry run newsletter_gen
-```
-
-This command initializes the newsletter-gen Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folser
-
-## Understanding Your Crew
-
-The newsletter-gen Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the NewsletterGen Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Joing our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat wtih our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
